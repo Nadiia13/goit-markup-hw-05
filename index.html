@@ -46,7 +46,15 @@
     <section class="hero overlay">
            <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button" type="button">Замовити послугу</button>
+            <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <svg class="close" width="18px" height="18px" data-modal-close>
+                        <use href="./images/symbol-defs.svg#icon-close-black">
+                        </use>
+                    </svg>
+                </div>
+            </div>
            </div>
     </section>
     <section class="description">
@@ -103,16 +111,19 @@
                 <li class="work-photo">
                     <div class="img">
                         <img src="./img/box1.jpg" alt="розробка сайту" width="370">
+                        <p class="work-info">Десктопні додатки</p>
                     </div>
                 </li>
                 <li class="work-photo">
                     <div class="img">
                         <img src="./img/box2.jpg" alt="конфігурація додатку" width="370">
+                        <p class="work-info">Мобільні додатки</p>
                     </div>
                 </li>
                 <li class="work-photo">
                     <div class="img">
                         <img src="./img/box3.jpg" alt="дизайнерське оформлення" width="370">
+                        <p class="work-info">Дизайнерські рішення</p>
                     </div>
                 </li>
             </ul>
@@ -386,5 +397,6 @@
         </div>
    </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
